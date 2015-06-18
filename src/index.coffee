@@ -50,12 +50,12 @@ init = (el, opts = {}) ->
 
   unless 'tools' of opts
     opts.tools = [
+      tools.Text,
       tools.Pencil,
       tools.Eraser,
       tools.Line,
       tools.Rectangle,
       tools.Ellipse,
-      tools.Text,
       tools.Pan,
       tools.Eyedropper,
     ]
