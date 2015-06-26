@@ -110,6 +110,7 @@
           lc.setImageSize(null, 200)
         });
 
+        var oldOnload = backgroundImage.onload;
         backgroundImage.onload = function() {
           $('.svg-container')[0].innerHTML = lc.getSVGString();
           if (oldOnload) oldOnload();
