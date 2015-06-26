@@ -111,7 +111,8 @@
         });
 
         backgroundImage.onload = function() {
-          $('.svg-container')[0].innerHTML = lc.getSVGString()
+          $('.svg-container')[0].innerHTML = lc.getSVGString();
+          if (oldOnload) oldOnload();
         }
 
         /* demo of inserting a shape below another
